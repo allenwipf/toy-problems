@@ -1,25 +1,15 @@
 
-//problem 1 solved
+var days = ["first", "second"]
+var unique = ["Partridge in a Pear Tree", "Turtle Doves", "3 French Hens", "4 Calling Birds", "5 Golden Rings", "6 Geese a Laying", "7 Swans a Swimming"]
 
-for (var x = 1; x <= 4; x++){
+for (var x = 1; x <= 2; x++){
 
-	console.log("On the " + x + " of Christmas")
+	console.log("On the " + days[x - 1] + " of Christmas")
 	console.log("My true love gave to me")
+	console.log(x + " " + unique[x -1] + '\n')
 	console.log ('\n')
 
 
 }
 
 
-//RUBY CODE
-def add(p)
-	sum = p + 4
-	return(sum)
-end
-
-def calcultatoins(x,y,z)
-	x = add(x)
-
-add()
-
-calcultatoins(10, 11, 15)
