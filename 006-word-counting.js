@@ -1,21 +1,22 @@
 // Given a large string containing words, count how many occurrences of each word are present.
 
-var stringOfWords = "It is rather for us, the living, we here be dedicated to the great task remaining before us.";
-var stringOfWords = stringOfWords.replace(/[^a-zA-Z 0-9]+/g,'').toLowerCase().split(" ");
+function wordCounter(stringOfWords){
+	var stringOfWords = stringOfWords.replace(/[^a-zA-Z 0-9]+/g,'').toLowerCase().split(" ");
 
-wordHash = {}
-
-for (var x = 0; x <= stringOfWords.length -1; x++){
-	var word = stringOfWords[x]
-	if (word in wordHash){
-		wordHash[word] += 1
-	} else {
-		wordHash[word] = 1
+	wordHash = {};
+	for (var x = 0; x <= stringOfWords.length -1; x++){
+		var word = stringOfWords[x];
+		if (word in wordHash){
+			wordHash[word] += 1;
+		} else {
+			wordHash[word] = 1;
+		}
 	}
-
+	console.log(wordHash);
 }
- 
-console.log(wordHash);
+
+wordCounter("It is rather for us, the living, we here be dedicated to the great task remaining before us.");
+
 
 // Need key value pair
 // split words by space
