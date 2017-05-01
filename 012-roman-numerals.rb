@@ -1,21 +1,6 @@
 require "pry"
-# Roman Numeral
 
 # Given an integer, convert it to a Roman numeral string.
-
-# Example
-
-# Input
-
-# 363
-
-# 364
-
-# Output
-
-# For 363, the output would be CCCLXIII.
-
-# For 364, either CCCLXIV or CCCLXIIII is acceptable.
 
 I = 1
 V = 5
