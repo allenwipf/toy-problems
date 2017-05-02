@@ -15,10 +15,11 @@ function diceRolls(dice){
  	for (var x = 0; x < rolls; x++){
  		console.log(Math.floor(Math.random() * max) + 1);
  	};
-
 };
 
 diceRolls("2d20");
+console.log("\n");
+diceRolls("20d40");
 
 
 //  2d20 means I roll the dies 2 times and each time the number has to be  1 <= n <= 20
